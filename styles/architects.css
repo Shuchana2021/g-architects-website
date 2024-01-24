@@ -1,12 +1,24 @@
 /* work sans font from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
+/* shared styles */
 
 
 *{
 font-family: 'Lato', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Work Sans', sans-serif;
+}
+
+.btn-primary{
+  border-radius: 8px;
+  color: #FFF;
+  font-size: 1.25rem;
+  background: #FF900E;
+  padding: 20px 25px;
+  color: #FFF;
+  cursor: pointer;
+ border: 0;
 }
 /* header styles */
 header{
@@ -54,3 +66,37 @@ nav li a{
 .banner-description{
    color: #727272; 
 }
+.banner img{
+    margin: 20px;
+   width: 100%;
+
+}
+/* responsive media */
+/* mobile devices */
+@media screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+       flex-direction: column; 
+    }
+}
+
+/* tablet or mobile device*/
+@media screen and (min-width:576px) and (max-width: 960px) {
+    header{
+       padding: 50px; 
+    }
+nav{
+    flex-direction: column;
+}
+}
+
+
+
+/* main style 
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}/*
+
